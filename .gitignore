@@ -37,6 +37,9 @@ dist-ssr
 # Ignore CSS
 *.css
 
+#canvas stuff
+canvas/
+
 # build stuff
 build/
 
