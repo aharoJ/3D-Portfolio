@@ -24,7 +24,7 @@ My dev portfolio is built with cutting-edge libraries like React, Three.js, and 
 <h2 align="center"> Features </h2>
 
 <h4 align="center"> Here are some of the features I have included in my portfolio website: </h4>
-<ul align='center'>
+<ul>
   <li>Responsive design for optimal viewing on different devices</li>
   <li>Interactive 3D models built with Three.js to add an immersive experience</li>
   <li>Dynamic content powered by React for a seamless user experience</li>
