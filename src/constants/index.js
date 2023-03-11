@@ -4,25 +4,34 @@ import {
     creator,
     web,
     javascript,
-    typescript,
-    html,
-    css,
     reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+
+// **** my stuff ****
+    google,
+    apple,
+    kean,
+    tmobile,
+// ****************
+
+// **** Balls stuff ****
+    java,
+    python,
+    linux,
+    hacking,
+    gamer,
+    machinelearning,
+    cassandra,
+    dataanalyst,
+    datastructures,
+// ****************
+
+
+    cpp,
+    database,
+
+    github_projects,
+    vivaldi_projects,
+    ml_projects,
   } from "../assets";
   
   export const navLinks = [
@@ -42,129 +51,115 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "backend developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "algorithms engineer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "machine learning",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "opensource contributor",
       icon: creator,
     },
   ];
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
+      name: "java",
+      icon: java,
     },
     {
-      name: "CSS 3",
-      icon: css,
+      name: "python",
+      icon: python,
+    },
+    {
+      name: "C++",
+      icon: cpp,
     },
     {
       name: "JavaScript",
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "cassandra database nosql",
+      icon: cassandra,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
+      name: "linux",
+      icon: linux,
     },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+
+    // {
+    //   name: "",
+    //   icon: ,
+    // },
+    // {
+    //   name: "",
+    //   icon: ,
+    // },
+    // {
+    //   name: "",
+    //   icon: ,
+    // },
+
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Regional Manager",
+      company_name: "T-mobile",
+      icon: tmobile,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "February 2019 - June 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Coordinated and delegated team tasks and monitored completion to drive efficiency while generating 63% of the sales and leading by example.",
+        "Implement 50% of daily training, job instructions and blueprints to verify completion of assigned tasks with outlined specifications.",
+        "Achieved 139% increase in store performance and monthly targets, surpassing high-volume stores with 8.7 customer satisfaction.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "SWE Instructor [Apple Teacher]",
+      company_name: "Apple",
+      icon: apple,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "August 2022 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed interactive Swift programming presentations with accompanying exercises, activities, projects, and initiatives for students at institutions w/out programming courses.",
+        "Maintained a trusting environment where students felt encouraged to participate, ask questions and receive individual attention to ellectively learn to program.",
+        "Engaged in public speaking to educate schools about different types of technologies, including algorithms and data structures, hacking, web dev, video game dev, machine learning engineering, backend engineering, and operating systems",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "Undergraduate Researcher for University of Kean",
+      company_name: "LREU && CASHI",
+      icon: kean,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "2023 - Present [seasonal spring]",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Manage and monitored research progress, including conducting literature review and doing a final research presentation along with a poster.",
+        "Utilized Java benchmark and Maven projects in experiments; Pitest to generate mutations, write Python scripts to find LOC per function of the program.",
+        "Conduct research to investigate the correlation between mutant score and the size of functions and mutant operators, and measure the effectiveness or test suites by comparing the number of killed mutants to equivalent mutants.",
+      ],
+    },
+    {
+      title: "Undergraduate for GoogleCSR",
+      company_name: "Google",
+      icon: google,
+      iconBg: "#E6DEDD",
+      date: "2023 - Present [seasonal spring]",
+      points: [
+        "As a participant in the Google ExploreCSR program, I am gaining expertise in a diverse range of computer science topics.",
+        "Including python, data manipulation and visualization using matplotlib, numpy, pandas, and seaborn.",
+        "Web development using javascript, html/css, and react. Efficient use of the command line intertace (cli) and more.",
       ],
     },
   ];
@@ -172,95 +167,96 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+        "in dev...",
       name: "Sara Lee",
       designation: "CFO",
-      company: "Acme Co",
+      company: "company",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
+        "in dev...",
+      name: "Chris Mark",
       designation: "COO",
-      company: "DEF Corp",
+      company: "company",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+        "in dev...",
       name: "Lisa Wang",
       designation: "CTO",
-      company: "456 Enterprises",
+      company: "company",
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "aharoJ",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Documentation, code, projects, and resources, cover a range of topics, including machine learning, deep learning, hacking, multi-modular use, frameworks, data structures, algorithms, and more.",
       tags: [
         {
-          name: "react",
+          name: "opensource",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "machine-learning",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "cli",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: github_projects,
+      source_code_link: "https://github.com/aharoJ",
     },
     {
-      name: "Job IT",
+      name: "Vivaldi",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "My Vivaldi configuration includes a comprehensive list of custom hotkeys, designed to make your browsing experience more efficient and intuitive.",
       tags: [
         {
-          name: "react",
+          name: "vim/Nvim",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "custom-browser",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "vivaldi",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: vivaldi_projects,
+      source_code_link: "https://themes.vivaldi.net/themes/nV6vpPxDvdN",
     },
     {
-      name: "Trip Guide",
+      name: "chatGPT3 by aharoJ",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
         {
-          name: "nextjs",
+          name: "chatGPT3",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "machine-learning",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "NLP",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: ml_projects,
+      source_code_link: "https://github.com/aharoJ/opensource#-machine-learning--",
     },
   ];
   
   export { services, technologies, experiences, testimonials, projects };
+  
   
