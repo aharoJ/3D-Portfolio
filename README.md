@@ -20,7 +20,8 @@
 <h1 align="center"> My dev portfolio dev </h1>
 My dev portfolio is built with cutting-edge libraries like React, Three.js, and Tailwind CSS. The website features immersive 3D models, dynamic content, and smooth animations, all optimized for fast rendering speeds. As an open-source advocate, I am publishing my portfolio under the MIT License, allowing others to use and learn from my work. This project showcases my strong development skills and my dedication to staying up-to-date with the latest technologies.
 
-## Features
+
+<h2 align="center"> Features </h2>
 Here are some of the features I have included in my portfolio website:
 
 - Responsive design for optimal viewing on different devices
