@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX}
-        absolute inset-0 md:top-[65px] xs:top-[70px] max-w-7xl mx-auto flex 
+        absolute inset-0 md:top-[100px] xs:top-[90px] max-w-7xl mx-auto flex 
         flex- items-start gap-5 `}>
         
         {/* this the purple bar */}
