@@ -7,8 +7,8 @@ const Hero = () => {
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX}
-      absolute inset-0 top-[120px] max-w-7xl mx-auto flex 
-      flex- items-start gap-5`}>
+        absolute inset-0 md:top-[65px] xs:top-[70px] max-w-7xl mx-auto flex 
+        flex- items-start gap-5 `}>
         
         {/* this the purple bar */}
         <div className='flex flex-col justify-center items-center mt-5'>
@@ -25,7 +25,7 @@ const Hero = () => {
           <h1 className= {`${styles.heroHeadText}`} > 
               <span className=' 
               font-extralight tracking-tighter bg-gradient-to-r from-violet-500 via-rose-400 to-slate-500 inline-block text-transparent 
-              bg-clip-text
+              bg-clip-text 
               '
               > Angel J. Haro </span>
           </h1>
