@@ -29,8 +29,9 @@ const Navbar = () => {
     <nav
       className=
       {`${styles.paddingX}
-        w-full flex items-center py-5 fixed top-0 z-20 
-        ${scrolled ? "bg-primary" : "bg-transparent"}`
+        w-full flex items-center py-0 fixed top-0 z-20
+
+        ${scrolled ? "bg-black/25 shadow-lg shadow-cyan-500/30 backdrop-blur-sm" : "bg-black/25 shadow-lg shadow-red-500/90 backdrop-blur-sm "}`
       }
     >
         {/* this right here is the about, work, contact */}
@@ -48,8 +49,9 @@ const Navbar = () => {
           'text-white text-[18px] font-bold cursor-pointer flex xs:ml-10 '
           > */}
 
-          <p className=
-          'bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex text-transparent bg-clip-text cursor-pointer xs:ml-10 text-[48px] font-thin tracking-widest' > aharoJ &nbsp;
+          <p 
+          className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex text-transparent bg-clip-text cursor-pointer xs:ml-10 text-[48px] font-thin tracking-widest md:indent-6' 
+          > aharoJ &nbsp;
             <span className='xl:block hidden'>&nbsp;|&nbsp; Angel J. Haro</span>
           </p>
         </Link>
