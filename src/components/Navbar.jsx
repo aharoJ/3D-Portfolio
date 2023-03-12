@@ -29,7 +29,7 @@ const Navbar = () => {
     <nav
       className=
       {`${styles.paddingX}
-        w-full flex items-center py-0 fixed top-0 z-20 
+        w-full flex items-center py-5 fixed top-0 z-20 
         ${scrolled ? "bg-primary" : "bg-transparent"}`
       }
     >
@@ -50,7 +50,7 @@ const Navbar = () => {
 
           <p className=
           'bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex text-transparent bg-clip-text cursor-pointer xs:ml-10 text-[48px] font-thin tracking-widest' > aharoJ &nbsp;
-            <span className='l:block hidden'>&nbsp;|&nbsp; Angel J. Haro</span>
+            <span className='xl:block hidden'>&nbsp;|&nbsp; Angel J. Haro</span>
           </p>
         </Link>
 
