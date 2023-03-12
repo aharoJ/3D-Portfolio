@@ -34,7 +34,7 @@ const Navbar = () => {
         ${scrolled ? "bg-black/25 shadow-lg shadow-cyan-500/30 backdrop-blur-sm" : "bg-black/25 shadow-lg shadow-red-500/90 backdrop-blur-sm "}`
       }
     >
-        {/* this right here is the about, work, contact */}
+        {/* this right here is bar entity with about, work, contact + mobile hamburger*/}
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           to='/'
@@ -44,11 +44,14 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          {/* <p className=
-          'text-white text-[18px] font-bold cursor-pointer flex xs:ml-10 '
-          > */}
+          {/* LOGO Stuff  */}
+          <img src={logo} alt='logo' 
+          className='object-contain
+          md:w-20 md:h-20 
+          xs:w-11 xs:h-20 
+          ' />
 
+          {/* this is the aharoJ | angel j haro */}
           <p 
           className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex text-transparent bg-clip-text cursor-pointer xs:ml-10 text-[48px] font-thin tracking-widest md:indent-6' 
           > aharoJ &nbsp;
