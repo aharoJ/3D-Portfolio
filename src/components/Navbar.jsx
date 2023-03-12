@@ -5,16 +5,35 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
-
 const Navbar = () => {
-  const[active, setActive]= useState('');
-  const[toggle, setToggle]= useState(false);
+  const [active, setActive] = useState("");
+  const [toggle, setToggle] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <nav
-    className=
-    {`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-black/25 shadow-lg shadow-cyan-500/20 backdrop-blur-sm `} 
-    style={{ height: "70px" }} // Set a fixed height
-  >
+      className=
+      {`${styles.paddingX}
+        w-full flex items-center py-0 fixed top-0 z-20 
+        ${scrolled ? "bg-primary" : "bg-transparent"}`
+      }
+    >
+        {/* this right here is the about, work, contact */}
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           to='/'
@@ -24,118 +43,69 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <div>
-            <img src={logo} alt='logo' className="w-full h-16 "/>
-          </div>
+          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
+          {/* <p className=
+          'text-white text-[18px] font-bold cursor-pointer flex xs:ml-10 '
+          > */}
 
-
-          {/* <p className="text-white text-[16px] font-bold cursor-pointer flex ">&nbsp;&nbsp;&nbsp;;
-            Angel J. Haro
-              <span className="sm:block hidden">&nbsp;&nbsp;|&nbsp;&nbsp; aharoJ</span>
-              <span className=' tracking-tighter bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 inline-block text-transparent bg-clip-text '
-              > aharoJ </span>
-          </p> */}
-
-
-
-          <p className="cursor-pointer flex ">
-              <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 inline-block 
-              text-transparent bg-clip-text text-[48px] font-thin tracking-widest	indent-8'
-              >  aharoJ </span>
+          <p className=
+          'bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex text-transparent bg-clip-text cursor-pointer xs:ml-10 text-[48px] font-thin tracking-widest' > aharoJ &nbsp;
+            <span className='l:block hidden'>&nbsp;|&nbsp; Angel J. Haro</span>
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
-          {navLinks.map((link) => (
+
+
+
+        <ul className='list-none hidden sm:flex flex-row gap-10'>
+          {navLinks.map((nav) => (
             <li
-              key={link.id}
-              className={`${active === link.title 
-                ? "text-white" 
-                : "text-secondary"
-              } 
-              hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={()=> setActive(link.title)}
+              key={nav.id}
+              className={`${
+                active === nav.title ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              onClick={() => setActive(nav.title)}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
-
+              <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
-          ) )}
+          ))}
         </ul>
-        {/* this one is for mobile */}
-        <div className="sm:hidden flex flex-1 justify-end items-center">
-          {/* this part allow us to expand or close the menu in mobile */}
-          <img 
-            src={toggle ? close : menu } alt="menu" 
-            className=
-            "w-[28px] h-[28px] object-contain cursoer-pointern "
-            onClick={()=> setToggle(!toggle)}
+
+
+
+        <div className='sm:hidden flex flex-1 justify-end items-center'>
+          <img
+            src={toggle ? close : menu}
+            alt='menu'
+            className='w-[28px] h-[28px] object-contain'
+            onClick={() => setToggle(!toggle)}
           />
-          
 
-
-          
-          {/* <div className=
-            {`${!toggle ? "hidden" : "flex" }
-            p-3 absolute top-20 right-0 my-2 min-w-[140px] z-10 
-            rounded-full bg-black/40 justify-center outline outline-offset-1 mx-3 outline-1 hover:outline-2 outline-pink-500/40
-            shadow-lg shadow-cyan-500/50 
-            ` }
+          <div
+            className={`${
+              !toggle ? "hidden" : "flex"
+            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
-            <ul className="list-none flex justify-end items-start flex-col gap-4">
-              {navLinks.map((link) => (
+            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+              {navLinks.map((nav) => (
                 <li
-                  key={link.id}
-                  className={`${active === link.title 
-                    ? "text-white" 
-                    : "text-secondary"
-                  } 
-                  font-poppings font-medium text-[16px] `}
-                  onClick={()=> {
-                    setToggle(!toggle)
-                    setActive(link.title);
+                  key={nav.id}
+                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                    active === nav.title ? "text-white" : "text-secondary"
+                  }`}
+                  onClick={() => {
+                    setToggle(!toggle);
+                    setActive(nav.title);
                   }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
-              ) )}
+              ))}
             </ul>
-          </div> */}
-
-
-
-          <nav className=
-            {`${!toggle ? "hidden" : "flex" }
-            p-3 absolute top-20 right-0 my-2 min-w-[140px] z-10 
-            rounded-full bg-black/40 justify-center outline outline-offset-1 mx-3 outline-1 hover:outline-2 outline-pink-500/40
-            shadow-lg shadow-cyan-500/50 backdrop-blur-xl
-            ` }
-          >
-            <ul className="list-none flex justify-end items-start flex-col gap-4">
-              {navLinks.map((link) => (
-                <li
-                  key={link.id}
-                  className={`${active === link.title 
-                    ? "text-white" 
-                    : "text-secondary"
-                  } 
-                  font-poppings font-medium text-[16px] `}
-                  onClick={()=> {
-                    setToggle(!toggle)
-                    setActive(link.title);
-                  }}
-                >
-                  <a href={`#${link.id}`}>{link.title}</a>
-                </li>
-              ) )}
-            </ul>
-          </nav>
-
-
-
-
+          </div>
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
