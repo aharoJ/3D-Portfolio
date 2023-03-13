@@ -62,7 +62,7 @@ const Navbar = () => {
         </Link>
 
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-12'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -91,7 +91,7 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-full
+            } p-6 absolute top-20 right-0 mx-4 my-10 min-w-[140px] z-10 rounded-full
               justify-center border-2 border-rose-500/30
               shadow-lg shadow-red-500/60 backdrop-blur-sm
             `}

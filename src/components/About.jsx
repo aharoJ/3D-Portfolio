@@ -80,16 +80,18 @@ const About = () => {
       <motion.p
         variants={fadeIn("","",0.1,0.1)}
         className='mt-10 text-[20px] max-w-3xl leading-[20px]
-        bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-rose-900 via-slate-100 to-neutral-300 inline-block text-transparent bg-clip-text text-center mx-0 md:mx-48
-        font-light tracking-tight '
+        bg-gradient-to-r from-indigo-500 via-yellow-500 to-pink-500 inline-block text-transparent bg-clip-text 
+        text-center mx-0 md:mx-48 font-light tracking-wide '
       >
         As a driven and ambitious computer scientist, I am eager to make a lasting impact in the world. Despite facing challenges early in my career due to my humble upbringing, I have revived my enthusiasm for technology and am focused on achieving recognition in the field. With a passion for software architecture, machine learning, pipelines, and hacking, I am committed to lifelong learning and embody Albert Einstein's words: "Wisdom is not a product of schooling but of the lifelong attempt to acquire it."
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((services, index)=> (
-          <ServiceCard key={services.title} index=
-          {index} {...services}/>    
+      <div className='mt-20 flex flex-wrap gap-10 justify-center'>
+        {services.map((service, index)=> (
+          <ServiceCard 
+          key={service.title} 
+          index={index}
+          {...service}/>    
         
         ))}
 
