@@ -151,7 +151,7 @@ import {
       ],
     },
     {
-      title: "Undergraduate for GoogleCSR",
+      title: "Undergraduate Researcher for Google",
       company_name: "Google",
       icon: google,
       iconBg: "#E6DEDD",
@@ -237,23 +237,23 @@ import {
     {
       name: "chatGPT3 by aharoJ",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "My dev portfolio is built with cutting-edge libraries like React, Three.js, and Tailwind CSS, we use 3D models, dynamic content, and smooth animations, all optimized for fast rendering speeds. As an open-source advocate, I am publishing my portfolio under the MIT License, allowing others to use and learn from my work.",
       tags: [
         {
-          name: "chatGPT3",
+          name: "dev-portfolio",
           color: "blue-text-gradient",
         },
         {
-          name: "machine-learning",
+          name: "react",
           color: "green-text-gradient",
         },
         {
-          name: "NLP",
+          name: "tailwindcss",
           color: "pink-text-gradient",
         },
       ],
       image: ml_projects,
-      source_code_link: "https://github.com/aharoJ/opensource#-machine-learning--",
+      source_code_link: "https://github.com/aharoJ/dev_portfolio",
     },
   ];
   

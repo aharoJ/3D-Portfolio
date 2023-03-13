@@ -11,11 +11,11 @@ const Hero = () => {
         flex- items-start gap-5 `}>
         
         {/* this the purple bar */}
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915eff]'/>
-          <div className='w-1 sm:h80 h-40 violet-gradient'/>
+        <div className='flex flex-col justify-center items-center mt-20'>
+          <div className='w-5 h-5 rounded-full bg-indigo-500'/>
+          <div className='w-1 sm:h80 h-40 bg-indigo-500'/>
         </div>
-
+ 
         <div >
           {/* this the init Header stuff */}
           {/* <h1 className= {`${styles.heroHeadText}`} > 
@@ -24,7 +24,7 @@ const Hero = () => {
 
           <h1 className= {`${styles.heroHeadText}`} > 
               <span className=' 
-              font-extralight tracking-tighter bg-gradient-to-r from-violet-500 via-rose-400 to-slate-500 inline-block text-transparent 
+              font-extralight tracking-tighter bg-gradient-to-r from-violet-500 via-rose-600 to-slate-900 inline-block text-transparent 
               bg-clip-text 
               '
               > Angel J. Haro </span>
@@ -32,23 +32,23 @@ const Hero = () => {
 
           <p className={`${styles.heroSubText} mt-2 `} >
             <a class="
-             bg-gradient-to-l from-red-400 via-yellow-400 to-violet-300/50
-             inline-block text-transparent bg-clip-text font-extralight tracking-wide "
+              bg-gradient-to-r from-indigo-500 via-yellow-500 to-pink-500
+              inline-block text-transparent bg-clip-text font-extralight tracking-wide "
             >Algorithm and Data Structures Engineer </a> <br/>
 
             <a class="
-             bg-gradient-to-r from-indigo-400 via-yellow-400 to-pink-300 
-             inline-block text-transparent bg-clip-text font-extralight tracking-wide "
+              bg-gradient-to-r from-indigo-500 via-yellow-500 to-pink-500
+              inline-block text-transparent bg-clip-text font-extralight tracking-wide "
             >Machine Learning Enigneer</a> <br/>
                         
             <a class="
-             bg-gradient-to-r from-indigo-300 via-yellow-300 to-pink-200 
-             inline-block text-transparent bg-clip-text font-extralight tracking-wide "
+              bg-gradient-to-r from-indigo-500 via-yellow-500 to-pink-500
+              inline-block text-transparent bg-clip-text font-extralight tracking-wide "
             >Software Architect</a> <br/>            
             
             <a class="
-             bg-gradient-to-r from-red-300 via-blue-300 to-red-300 
-             inline-block text-transparent bg-clip-text font-extralight tracking-wide "
+              bg-gradient-to-r from-indigo-500 via-yellow-500 to-pink-500 
+              inline-block text-transparent bg-clip-text font-extralight tracking-wide "
             >Backend Dev</a> <br/>   
           </p>
         </div>
