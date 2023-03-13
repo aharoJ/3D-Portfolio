@@ -31,9 +31,11 @@ const Navbar = () => {
       {`${styles.paddingX}
         w-full flex items-center py-0 fixed top-0 z-20
 
-        ${scrolled ? "bg-black/25 shadow-lg shadow-cyan-500/30 backdrop-blur-sm" : "bg-black/25 shadow-lg shadow-red-500/90 backdrop-blur-sm "}`
+        ${scrolled ? "bg-black/25 shadow-lg shadow-cyan-500/20 backdrop-blur-sm" : "bg-black/25 shadow-lg shadow-red-500/90 backdrop-blur-sm "}`
       }
     >
+
+
         {/* this right here is bar entity with about, work, contact + mobile hamburger*/}
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -75,21 +77,28 @@ const Navbar = () => {
         </ul>
 
 
-
+        {/* hamburger icon but issues with rezing or idk if its the flex wrap */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
             alt='menu'
-            className='w-[28px] h-[28px] object-contain'
+            className=
+            ' object-contain w-full h-[30px] '
             onClick={() => setToggle(!toggle)}
           />
 
+                                {/* container for hamburger */}
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-full
+              justify-center border-2 border-rose-500/30
+              shadow-lg shadow-red-500/60 backdrop-blur-sm
+            `}
           >
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+
+                    {/* here is the pop up menu the string objects */}
+            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4 '>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
@@ -107,7 +116,11 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
+
+        
       </div>
+
+
     </nav>
   );
 };
