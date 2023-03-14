@@ -30,6 +30,8 @@ const Navbar = () => {
       className=
       {`${styles.paddingX}
         w-full flex items-center py-0 fixed top-0 z-20
+        md:px-12
+        tablets:px-6
 
         ${scrolled ? "bg-black/25 shadow-lg shadow-cyan-500/20 backdrop-blur-sm" : "bg-black/25 shadow-lg shadow-red-500/90 backdrop-blur-sm "}`
       }
