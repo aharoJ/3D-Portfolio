@@ -51,6 +51,8 @@ const Navbar = () => {
           className='object-contain
           md:w-20 md:h-20 
           xs:w-11 xs:h-20 
+          sm:w-11 sm:h-20 
+          
           ' />
 
           {/* this is the aharoJ | angel j haro */}
