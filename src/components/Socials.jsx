@@ -2,9 +2,12 @@ import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useState } from 'react';
 import resume from '/Users/aharo/desk/javascript/portfolio/src/assets/resume[angel-haro].pdf'
+import resume_phone from '/Users/aharo/desk/javascript/portfolio/src/assets/resume[angel-haro].jpg'
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
 import { fadeIn, textVariant } from '../utils/motion';
+import { isMobile } from 'react-device-detect';
+
 
 const Socials = () => 
 {
@@ -19,44 +22,60 @@ const Socials = () =>
 
   return (
     <>
+
+
+
+
       <motion.nav>
-        <div 
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-        >
-          <motion.div 
-            style=
-            {{
-              width: 200,
-              height: 50,
+        {/* Show 'Download Resume' only on non-mobile (desktop) devices */}
+        <div className="flex justify-center">
+          <motion.div
+            style={{
               borderRadius: 100,
-              backgroundColor: '#fff',
               cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
             }}
             onTap={sequence}
             animate={animation}
-            className=''
+            className={!isMobile ? 'flex items-center justify-center bg-white mt-10' : 'hidden'}
           >
-            <a href={resume} download 
-              className="inline-flex items-center justify-center 
-              px-5 py-2 text-base font-light  rounded-full 
-              bg-gray-800/90 hover:bg-rose-900/90 focus:outline-none focus:ring-2 focus:ring-offset-2
-              ">
-                <p
-                  className=
-                  ' '
-                > Download Resume
-                </p>
+            <a
+              href={resume}
+              download
+              className="inline-flex items-center justify-center px-5 py-2 text-base font-light rounded-full bg-gray-800/90 hover:bg-rose-900/90 focus:outline-none focus:ring-2 focus:ring-offset-2"
+            >
+              <p className="">Download Resume</p>
+            </a>
+          </motion.div>
+        </div>
+
+
+
+        {/* Show 'View Resume' only on mobile devices */}
+        <div className="flex justify-center">
+          <motion.div
+            style={{
+              borderRadius: 100,
+              cursor: 'pointer',
+            }}
+            onTap={sequence}
+            animate={animation}
+            className={isMobile ? 'flex items-center justify-center bg-white mt-10' : 'hidden'}
+          >
+            <a
+              href={resume_phone}
+              download
+              className="inline-flex items-center justify-center px-5 py-2 text-base font-light rounded-full bg-gray-800/90 hover:bg-rose-900/90 focus:outline-none focus:ring-2 focus:ring-offset-2"
+            >
+              <p className="">View Resume</p>
             </a>
           </motion.div>
         </div>
       </motion.nav>
+
+
+
+
+
 
 
 
@@ -66,6 +85,9 @@ const Socials = () =>
               My social medias
           </p>
       </div>
+
+
+
 
 
 
@@ -101,6 +123,8 @@ const Socials = () =>
 
 
 
+
+
       <motion.p
         variants={fadeIn("","",0.1,7.1)}
         className='mt-10 text-[20px] max-w-3xl leading-[20px]
@@ -109,6 +133,9 @@ const Socials = () =>
       >
         As a driven and ambitious computer scientist, I am eager to make a lasting impact in the world. Despite facing challenges early in my career due to my humble upbringing, I have revived my enthusiasm for technology and am focused on achieving recognition in the field. With a passion for software architecture, machine learning, pipelines, and hacking, I am committed to lifelong learning and embody Albert Einstein's words: "Wisdom is not a product of schooling but of the lifelong attempt to acquire it."
       </motion.p>
+
+
+
 
     </>
   )

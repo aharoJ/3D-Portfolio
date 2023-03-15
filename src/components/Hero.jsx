@@ -24,8 +24,8 @@ const Hero = () => {
 
           <h1 className= {`${styles.heroHeadText}`} > 
               <span className=' 
-              font-extralight tracking-tighter bg-gradient-to-r from-violet-500 via-rose-600 to-slate-900 inline-block text-transparent 
-              bg-clip-text 
+              font-extralight tracking-tighter 
+              bg-gradient-to-r from-violet-500 via-rose-600 to-slate-900 inline-block text-transparent bg-clip-text 
               '
               > Angel J. Haro </span>
           </h1>
