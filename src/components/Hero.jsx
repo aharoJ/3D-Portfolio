@@ -61,7 +61,7 @@ const Hero = () => {
       
       {/* this is the squily thing that drops us to the bottom phone focused */}
       <div className='absolute xs:bottom-32 xl:bottom-5 md:bottom-10 w-full flex justify-center items-center'>
-        <a href='#about'>
+        <a href='#socials'>
           <div className='w-[35px] h-[64px]
           rounded-3xl border-4 border-secondary flex justify-center
           items-start p-2
