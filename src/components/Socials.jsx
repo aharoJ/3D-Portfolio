@@ -2,7 +2,7 @@ import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useState } from 'react';
 import resume from '/Users/aharo/desk/javascript/portfolio/src/assets/resume[angel-haro].pdf'
-import resume_phone from '/Users/aharo/desk/javascript/portfolio/src/assets/resume[angel-haro].jpg'
+import resume_phone from '/Users/aharo/desk/javascript/portfolio/src/assets/resume[angel-haro].png'
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -51,7 +51,7 @@ const Socials = () =>
 
 
         {/* Show 'View Resume' only on mobile devices */}
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <motion.div
             style={{
               borderRadius: 100,
@@ -62,14 +62,42 @@ const Socials = () =>
             className={isMobile ? 'flex items-center justify-center bg-white mt-10' : 'hidden'}
           >
             <a
-              href={resume_phone}
+              // href={resume_phone}
+              // ISSUES with view on jpg 
+              // href={resume}
+              href={`https://drive.google.com/file/d/1mk8dx1yhubz_3FSphZqGR0o4VpnI1I1n/view`}
               download
               className="inline-flex items-center justify-center px-5 py-2 text-base font-light rounded-full bg-gray-800/90 hover:bg-rose-900/90 focus:outline-none focus:ring-2 focus:ring-offset-2"
             >
               <p className="">View Resume</p>
             </a>
           </motion.div>
+        </div> */}
+
+        {/* Show 'View Resume' only on mobile devices */}
+        <div className="flex justify-center">
+          <a
+            href={resume}
+            className={`${
+              isMobile ? 'flex' : 'hidden'
+            } items-center justify-center px-5 py-2 text-base font-light rounded-full bg-gray-800/90 hover:bg-rose-900/90 focus:outline-none focus:ring-2 focus:ring-offset-2`}
+          >
+            <motion.div
+              style={{
+                borderRadius: 100,
+                cursor: 'pointer',
+              }}
+              onTap={sequence}
+              animate={animation}
+            >
+              <p className="">View Resume</p>
+            </motion.div>
+          </a>
         </div>
+
+
+
+        
       </motion.nav>
 
 

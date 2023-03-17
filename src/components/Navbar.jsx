@@ -102,7 +102,7 @@ const Navbar = () => {
           >
 
                     {/* here is the pop up menu the string objects */}
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4 '>
+            <ul className='list-none flex justify-end  flex-1 flex-col gap-4 items-center'>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
