@@ -27,46 +27,44 @@ const Navbar = () => {
 
   return (
     <nav
-      className=
-      {`${styles.paddingX}
+      className={`${styles.paddingX}
         w-full flex items-center py-0 fixed top-0 z-20
         md:px-12
         tablets:px-6
 
-        ${scrolled ? "bg-black/25 shadow-lg shadow-cyan-500/20 backdrop-blur-sm" : "bg-black/25 shadow-lg shadow-red-500/90 backdrop-blur-sm "}`
-      }
+        ${scrolled ? "bg-black/25 shadow-lg shadow-cyan-500/20 backdrop-blur-sm" : "bg-black/25 shadow-lg shadow-red-500/90 backdrop-blur-sm "}`}
     >
-
-
-        {/* this right here is bar entity with about, work, contact + mobile hamburger*/}
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+      {/* this right here is bar entity with about, work, contact + mobile hamburger*/}
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
-          to='/'
-          className='flex items-center gap-2'
+          to="/"
+          className="flex items-center gap-2"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
           {/* LOGO Stuff  */}
-          <img src={logo} alt='logo' 
-          className='object-contain
+          <img
+            src={logo}
+            alt="logo"
+            className="object-contain
           md:w-20 md:h-20 
           xs:w-11 xs:h-20 
           sm:w-11 sm:h-20 
           
-          ' />
+          "
+          />
 
           {/* this is the aharoJ | angel j haro */}
-          <p 
-          className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex text-transparent bg-clip-text cursor-pointer xs:ml-10 text-[48px] font-thin tracking-widest md:indent-6' 
-          > aharoJ &nbsp;
-            <span className='xl:block hidden'>&nbsp;|&nbsp; Angel J. Haro</span>
+          <p className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex text-transparent bg-clip-text cursor-pointer xs:ml-10 text-[48px] font-thin tracking-widest md:indent-6">
+            {" "}
+            aharoJ &nbsp;
+            <span className="xl:block hidden">&nbsp;|&nbsp; Angel J. Haro</span>
           </p>
         </Link>
 
-
-        <ul className='list-none hidden sm:flex flex-row gap-12'>
+        <ul className="list-none hidden sm:flex flex-row gap-12">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -80,18 +78,16 @@ const Navbar = () => {
           ))}
         </ul>
 
-
         {/* hamburger icon but issues with rezing or idk if its the flex wrap */}
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
-            alt='menu'
-            className=
-            ' object-contain w-full h-[30px] '
+            alt="menu"
+            className=" object-contain w-full h-[30px] "
             onClick={() => setToggle(!toggle)}
           />
 
-                                {/* container for hamburger */}
+          {/* container for hamburger */}
           <div
             className={`${
               !toggle ? "hidden" : "flex"
@@ -100,9 +96,8 @@ const Navbar = () => {
               shadow-lg shadow-red-500/60 backdrop-blur-sm
             `}
           >
-
-                    {/* here is the pop up menu the string objects */}
-            <ul className='list-none flex justify-end  flex-1 flex-col gap-4 items-center'>
+            {/* here is the pop up menu the string objects */}
+            <ul className="list-none flex justify-end  flex-1 flex-col gap-4 items-center">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
@@ -120,11 +115,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-
-        
       </div>
-
-
     </nav>
   );
 };
