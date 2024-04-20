@@ -32,7 +32,6 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 //*********************************************
 
-
 // ********* 3d Balls ************************
 import java from "./tech/java.png";
 import python from "./tech/python.png";
@@ -46,14 +45,10 @@ import datastructures from "./tech/datastructures.svg";
 import cpp from "./tech/cpp.svg";
 import database from "./tech/database.svg";
 
-
 //*********************************************
-import github_projects  from './github_projects.png'
-import vivaldi_projects  from './vivaldi_projects.png'
-import ml_projects  from './ml_projects.png'
-
-
-
+import github_projects from "./github_projects.png";
+import vivaldi_projects from "./vivaldi_projects.png";
+import ml_projects from "./ml_projects.png";
 
 export {
   logo,
@@ -80,9 +75,6 @@ export {
   carrent,
   jobit,
   tripguide,
-
-
-
   google,
   apple,
   java,
@@ -98,8 +90,7 @@ export {
   datastructures,
   cpp,
   database,
-
   github_projects,
   vivaldi_projects,
-  ml_projects
-}
+  ml_projects,
+};
