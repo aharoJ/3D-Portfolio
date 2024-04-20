@@ -32,7 +32,8 @@ npm run dev
 ```
 
 <h2 align="center"> A 3D Porfolio </h2>
-My dev portfolio is built with cutting-edge libraries like React, Three.js, and Tailwind CSS. The website features immersive 3D models, dynamic content, and smooth animations, all optimized for fast rendering speeds.
+A 3-Dimensional Live moving Portfolio with libraries like React, Three.js, and Tailwind CSS. The website features immersive 3D models, 
+dynamic content, and smooth animations, all optimized for fast rendering speeds.
 <h2 align="center"> Features </h2>
 
 <ul  style="list-style-type:circle;">
