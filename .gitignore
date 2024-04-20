@@ -23,12 +23,7 @@ dist-ssr
 *.sln
 *.sw
 
-######### JS ignore #########
-src/styles.js
-src/index.css
-hoc/
-src/components/Contact.jsx
-
+#########  MINE #########
 # ignore ".trash" directory
 /.trash
 
